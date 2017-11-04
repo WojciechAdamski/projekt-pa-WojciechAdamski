@@ -1,0 +1,26 @@
+c:\users\user\documents\visual studio 2010\Projects\Quiz dobry\Quiz dobry\bin\Debug\Quiz dobry.exe
+c:\users\user\documents\visual studio 2010\Projects\Quiz dobry\Quiz dobry\bin\Debug\Quiz dobry.pdb
+c:\users\user\documents\visual studio 2010\Projects\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz_dobry.Properties.Resources.resources
+c:\users\user\documents\visual studio 2010\Projects\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz dobry.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2010\Projects\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz dobry.exe
+c:\users\user\documents\visual studio 2010\Projects\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz dobry.pdb
+C:\Users\user\documents\visual studio 2010\Projects\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz dobry.csprojResolveAssemblyReference.cache
+C:\Users\user\documents\visual studio 2010\Projects\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz_dobry.Form1.resources
+C:\Users\user\Desktop\Quiz dobry\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz dobry.exe
+C:\Users\user\Desktop\Quiz dobry\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz dobry.pdb
+C:\Users\user\Desktop\Quiz dobry\Quiz dobry\Quiz dobry\bin\Debug\Quiz dobry.exe
+C:\Users\user\Desktop\Quiz dobry\Quiz dobry\Quiz dobry\bin\Debug\Quiz dobry.pdb
+C:\Users\user\Desktop\Quiz dobry\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz dobry.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Quiz dobry\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz_dobry.Form1.resources
+C:\Users\user\Desktop\Quiz dobry\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz_dobry.Properties.Resources.resources
+C:\Users\user\Desktop\Quiz dobry\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz dobry.csproj.GenerateResource.Cache
+D:\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz dobry.exe
+D:\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz dobry.pdb
+C:\Users\user\Desktop\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz dobry.exe
+C:\Users\user\Desktop\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz dobry.pdb
+C:\Users\user\Desktop\Quiz dobry\Quiz dobry\bin\Debug\Quiz dobry.exe
+C:\Users\user\Desktop\Quiz dobry\Quiz dobry\bin\Debug\Quiz dobry.pdb
+C:\Users\user\Desktop\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz dobry.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz_dobry.Form1.resources
+C:\Users\user\Desktop\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz_dobry.Properties.Resources.resources
+C:\Users\user\Desktop\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz dobry.csproj.GenerateResource.Cache
