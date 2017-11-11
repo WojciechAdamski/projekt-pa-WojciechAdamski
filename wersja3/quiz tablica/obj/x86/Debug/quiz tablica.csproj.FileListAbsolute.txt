@@ -1,0 +1,23 @@
+c:\users\user\documents\visual studio 2010\Projects\quiz tablica\quiz tablica\bin\Debug\quiz tablica.exe
+c:\users\user\documents\visual studio 2010\Projects\quiz tablica\quiz tablica\bin\Debug\quiz tablica.pdb
+c:\users\user\documents\visual studio 2010\Projects\quiz tablica\quiz tablica\obj\x86\Debug\quiz_tablica.Form1.resources
+c:\users\user\documents\visual studio 2010\Projects\quiz tablica\quiz tablica\obj\x86\Debug\quiz_tablica.Properties.Resources.resources
+c:\users\user\documents\visual studio 2010\Projects\quiz tablica\quiz tablica\obj\x86\Debug\quiz tablica.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2010\Projects\quiz tablica\quiz tablica\obj\x86\Debug\quiz tablica.exe
+c:\users\user\documents\visual studio 2010\Projects\quiz tablica\quiz tablica\obj\x86\Debug\quiz tablica.pdb
+C:\Users\user\Desktop\quiz tablica\quiz tablica\obj\x86\Debug\quiz tablica.exe
+C:\Users\user\Desktop\quiz tablica\quiz tablica\obj\x86\Debug\quiz tablica.pdb
+C:\Users\user\Desktop\quiz tablica\quiz tablica\bin\Debug\quiz tablica.exe
+C:\Users\user\Desktop\quiz tablica\quiz tablica\bin\Debug\quiz tablica.pdb
+C:\Users\user\Desktop\quiz tablica\quiz tablica\obj\x86\Debug\quiz tablica.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\quiz tablica\quiz tablica\obj\x86\Debug\quiz_tablica.Form1.resources
+C:\Users\user\Desktop\quiz tablica\quiz tablica\obj\x86\Debug\quiz_tablica.Properties.Resources.resources
+C:\Users\user\Desktop\quiz tablica\quiz tablica\obj\x86\Debug\quiz tablica.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\quiz tablica - Copy\quiz tablica\obj\x86\Debug\quiz tablica.exe
+C:\Users\user\Desktop\quiz tablica - Copy\quiz tablica\obj\x86\Debug\quiz tablica.pdb
+C:\Users\user\Desktop\quiz tablica - Copy\quiz tablica\bin\Debug\quiz tablica.exe
+C:\Users\user\Desktop\quiz tablica - Copy\quiz tablica\bin\Debug\quiz tablica.pdb
+C:\Users\user\Desktop\quiz tablica - Copy\quiz tablica\obj\x86\Debug\quiz tablica.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\quiz tablica - Copy\quiz tablica\obj\x86\Debug\quiz_tablica.Form1.resources
+C:\Users\user\Desktop\quiz tablica - Copy\quiz tablica\obj\x86\Debug\quiz_tablica.Properties.Resources.resources
+C:\Users\user\Desktop\quiz tablica - Copy\quiz tablica\obj\x86\Debug\quiz tablica.csproj.GenerateResource.Cache
