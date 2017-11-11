@@ -26,12 +26,14 @@ namespace quiz_tablica
         public string c;
         public string d;
         int x;
+        int z;
 
         Random r = new Random();
 
         void zerowanie ()       
         {
                 x = 100;
+                z = 100;
                 textBox1.Text = "Wylosuj pytanie";
                 button4.Text = "A";
                 button5.Text = "B";
@@ -44,15 +46,17 @@ namespace quiz_tablica
 
         private void button1_Click(object sender, EventArgs e)  // LOSOWANIE PYTANIA
         {
+
             textBox2.Text = pkt.ToString();
 
-            x = r.Next(0, 15);
+            x = r.Next(1, 16);
+            z = x * 5;
 
-            pytania = File.ReadLines(@"pytania.txt").Skip(x).Take(1).First();
-            a = File.ReadLines(@"a.txt").Skip(x).Take(1).First();
-            b = File.ReadLines(@"b.txt").Skip(x).Take(1).First();
-            c = File.ReadLines(@"c.txt").Skip(x).Take(1).First();
-            d = File.ReadLines(@"d.txt").Skip(x).Take(1).First();
+            pytania = File.ReadLines(@"pytania.txt").Skip(z).Take(1).First();
+            a = File.ReadLines(@"pytania.txt").Skip(z + 1).Take(1).First();
+            b = File.ReadLines(@"pytania.txt").Skip(z + 2).Take(1).First();
+            c = File.ReadLines(@"pytania.txt").Skip(z + 3).Take(1).First();
+            d = File.ReadLines(@"pytania.txt").Skip(z + 4).Take(1).First();
 
             textBox1.Text = pytania;
             button4.Text = a;
@@ -68,7 +72,7 @@ namespace quiz_tablica
 
         private void button4_Click(object sender, EventArgs e)   //A
         {
-            if (x < 4)
+            if (z <= 20)
             {
                 pkt = pkt + 1;
                 button1.PerformClick();
@@ -87,7 +91,7 @@ namespace quiz_tablica
 
         private void button5_Click(object sender, EventArgs e)  //B
         {
-            if (x >= 4 & x < 8)
+            if (z > 20 & x <= 40)
             {
                 pkt = pkt + 1;
                 button1.PerformClick();
@@ -106,7 +110,7 @@ namespace quiz_tablica
 
         private void button2_Click(object sender, EventArgs e)  // C
         {
-            if (x >= 8 & x < 12)
+            if (z > 40 & x <= 60)
             {
                 pkt = pkt + 1;
                 button1.PerformClick();
@@ -125,7 +129,7 @@ namespace quiz_tablica
 
         private void button3_Click(object sender, EventArgs e) // D
         {
-            if (x >= 12 & x < 16)
+            if (z > 60 & x <= 80)
             {
                 pkt = pkt + 1;
                 button1.PerformClick();
