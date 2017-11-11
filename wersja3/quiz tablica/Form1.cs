@@ -91,7 +91,7 @@ namespace quiz_tablica
 
         private void button5_Click(object sender, EventArgs e)  //B
         {
-            if (z > 20 & x <= 40)
+            if (z > 20 & z <= 40)
             {
                 pkt = pkt + 1;
                 button1.PerformClick();
@@ -110,7 +110,7 @@ namespace quiz_tablica
 
         private void button2_Click(object sender, EventArgs e)  // C
         {
-            if (z > 40 & x <= 60)
+            if (z > 40 & z <= 60)
             {
                 pkt = pkt + 1;
                 button1.PerformClick();
@@ -129,7 +129,7 @@ namespace quiz_tablica
 
         private void button3_Click(object sender, EventArgs e) // D
         {
-            if (z > 60 & x <= 80)
+            if (z > 60 & z <= 80)
             {
                 pkt = pkt + 1;
                 button1.PerformClick();
