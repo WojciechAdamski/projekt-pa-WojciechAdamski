@@ -23,3 +23,9 @@ C:\Users\user\Desktop\quiz tablica - Copy\quiz tablica\obj\x86\Debug\quiz_tablic
 C:\Users\user\Desktop\quiz tablica - Copy\quiz tablica\obj\x86\Debug\quiz tablica.csproj.GenerateResource.Cache
 D:\projekt-pa-WojciechAdamski\wersja3\quiz tablica\obj\x86\Debug\quiz tablica.exe
 D:\projekt-pa-WojciechAdamski\wersja3\quiz tablica\obj\x86\Debug\quiz tablica.pdb
+D:\projekt-pa-WojciechAdamski\wersja3\quiz tablica\bin\Debug\quiz tablica.exe
+D:\projekt-pa-WojciechAdamski\wersja3\quiz tablica\bin\Debug\quiz tablica.pdb
+D:\projekt-pa-WojciechAdamski\wersja3\quiz tablica\obj\x86\Debug\quiz tablica.csprojResolveAssemblyReference.cache
+D:\projekt-pa-WojciechAdamski\wersja3\quiz tablica\obj\x86\Debug\quiz_tablica.Form1.resources
+D:\projekt-pa-WojciechAdamski\wersja3\quiz tablica\obj\x86\Debug\quiz_tablica.Properties.Resources.resources
+D:\projekt-pa-WojciechAdamski\wersja3\quiz tablica\obj\x86\Debug\quiz tablica.csproj.GenerateResource.Cache

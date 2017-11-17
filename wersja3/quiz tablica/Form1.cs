@@ -26,7 +26,7 @@ namespace quiz_tablica
         public string c;
         public string d;
         int x;
-        int z;
+        int z = 100;
 
         Random r = new Random();
 
