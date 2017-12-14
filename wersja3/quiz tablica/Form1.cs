@@ -27,26 +27,27 @@ namespace quiz_tablica
         public string d;
         int x;
         int z = 100;
+        int time = 6;
 
         Random r = new Random();
 
-        void zerowanie ()       
+        void zerowanie()
         {
-                x = 100;
-                z = 100;
-                textBox1.Text = "Wylosuj pytanie";
-                button4.Text = "A";
-                button5.Text = "B";
-                button2.Text = "C";
-                button3.Text = "D";
-                pkt = 0;
-                textBox2.Text = pkt.ToString();
-         }
+            x = 100;
+            z = 100;
+            textBox1.Text = "Wylosuj pytanie";
+            button4.Text = "A";
+            button5.Text = "B";
+            button2.Text = "C";
+            button3.Text = "D";
+            pkt = 0;
+            time = 6;
+            textBox2.Text = pkt.ToString();
+        }
 
 
         private void button1_Click(object sender, EventArgs e)  // LOSOWANIE PYTANIA
         {
-
             textBox2.Text = pkt.ToString();
 
             x = r.Next(1, 16);
@@ -63,6 +64,9 @@ namespace quiz_tablica
             button5.Text = b;
             button2.Text = c;
             button3.Text = d;
+
+            timer1.Start();
+
         }
 
 
@@ -74,13 +78,14 @@ namespace quiz_tablica
         {
             if (z <= 20)
             {
+                time = 6;
                 pkt = pkt + 1;
                 button1.PerformClick();
             }
             else
             {
-                pkt = 0;
-                MessageBox.Show("PRZEGRANA");
+                timer1.Stop();
+                MessageBox.Show("Zla odpowiedz.  Wynik:  " + pkt + " pkt");
                 zerowanie();
             }
         }
@@ -93,13 +98,14 @@ namespace quiz_tablica
         {
             if (z > 20 & z <= 40)
             {
+                time = 6;
                 pkt = pkt + 1;
                 button1.PerformClick();
             }
             else
             {
-                pkt = 0;
-                MessageBox.Show("PRZEGRANA");
+                timer1.Stop();
+                MessageBox.Show("Zla odpowiedz.  Wynik:  " + pkt + " pkt");
                 zerowanie();
             }
         }
@@ -112,13 +118,14 @@ namespace quiz_tablica
         {
             if (z > 40 & z <= 60)
             {
+                time = 6;
                 pkt = pkt + 1;
                 button1.PerformClick();
             }
             else
             {
-                pkt = 0;
-                MessageBox.Show("PRZEGRANA");
+                timer1.Stop();
+                MessageBox.Show("Zla odpowiedz.  Wynik:  " + pkt + " pkt");
                 zerowanie();
             }
         }
@@ -131,13 +138,26 @@ namespace quiz_tablica
         {
             if (z > 60 & z <= 80)
             {
+                time = 6;
                 pkt = pkt + 1;
                 button1.PerformClick();
             }
             else
             {
-                pkt = 0;
-                MessageBox.Show("PRZEGRANA");
+                timer1.Stop();
+                MessageBox.Show("Zla odpowiedz.  Wynik:  " + pkt + " pkt");
+                zerowanie();
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            time--;
+            textBox3.Text = time.ToString();
+            if (time == 0)
+            {
+                timer1.Stop();
+                MessageBox.Show("Koniec czasu!  Wynik:  " + pkt + " pkt");
                 zerowanie();
             }
         }
