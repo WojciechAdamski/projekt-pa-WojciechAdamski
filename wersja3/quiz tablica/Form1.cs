@@ -37,6 +37,7 @@ namespace quiz_tablica
 
         void zerowanie()
         {
+            pkt = 0;
             x = 100;
             z = 100;
             textBox1.Text = "Wylosuj pytanie";
