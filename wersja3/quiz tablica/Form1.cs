@@ -33,6 +33,8 @@ namespace quiz_tablica
 
         Random r = new Random();
 
+
+
         void zerowanie()
         {
             x = 100;
@@ -42,14 +44,13 @@ namespace quiz_tablica
             button5.Text = "B";
             button2.Text = "C";
             button3.Text = "D";
-            pkt = 0;
             time = 6;
             textBox2.Text = pkt.ToString();
-            timer2.Stop();
         }
 
 
-        private void button1_Click(object sender, EventArgs e)  // LOSOWANIE PYTANIA
+
+        void losowanie()
         {
             textBox2.Text = pkt.ToString();
 
@@ -69,13 +70,19 @@ namespace quiz_tablica
             button3.Text = d;
 
             timer1.Start();
-
-
-
         }
 
 
 
+        private void button7_Click(object sender, EventArgs e) // START
+        {
+            time = 6;
+            time1 = 0;
+            pkt = 0;
+            timer2.Start();
+            losowanie();
+            button7.Enabled = false;
+        }
 
 
 
@@ -85,20 +92,18 @@ namespace quiz_tablica
             {
                 time = 6;
                 pkt = pkt + 1;
-                button1.Enabled = true;
-                button1.PerformClick();
-                button1.Enabled = false;
+                losowanie();
             }
             else
             {
                 timer1.Stop();
-                File.AppendAllText(@"wyniki.txt", textBox4.Text + ":  " + pkt + " pkt w czasie: " + time1 + Environment.NewLine);
+                timer2.Stop();
+                if (pkt > 0) { File.AppendAllText(@"wyniki.txt", textBox4.Text + ":  " + pkt + " pkt w czasie: " + time1 + Environment.NewLine); }
                 MessageBox.Show("Zla odpowiedz.  Wynik:  " + pkt + " pkt");
                 zerowanie();
+                button7.Enabled = true;
             }
         }
-
-
 
 
 
@@ -108,20 +113,18 @@ namespace quiz_tablica
             {
                 time = 6;
                 pkt = pkt + 1;
-                button1.Enabled = true;
-                button1.PerformClick();
-                button1.Enabled = false;
+                losowanie();
             }
             else
             {
                 timer1.Stop();
-                File.AppendAllText(@"wyniki.txt", textBox4.Text + ":  " + pkt + " pkt w czasie: " + time1 + Environment.NewLine);
+                timer2.Stop();
+                if (pkt > 0) { File.AppendAllText(@"wyniki.txt", textBox4.Text + ":  " + pkt + " pkt w czasie: " + time1 + Environment.NewLine); }
                 MessageBox.Show("Zla odpowiedz.  Wynik:  " + pkt + " pkt");
                 zerowanie();
+                button7.Enabled = true;
             }
         }
-
-
 
 
 
@@ -131,20 +134,18 @@ namespace quiz_tablica
             {
                 time = 6;
                 pkt = pkt + 1;
-                button1.Enabled = true;
-                button1.PerformClick();
-                button1.Enabled = false;
+                losowanie();
             }
             else
             {
                 timer1.Stop();
-                File.AppendAllText(@"wyniki.txt", textBox4.Text + ":  " + pkt + " pkt w czasie: " + time1 + Environment.NewLine);
+                timer2.Stop();
+                if (pkt > 0) { File.AppendAllText(@"wyniki.txt", textBox4.Text + ":  " + pkt + " pkt w czasie: " + time1 + Environment.NewLine); }
                 MessageBox.Show("Zla odpowiedz.  Wynik:  " + pkt + " pkt");
                 zerowanie();
+                button7.Enabled = true;
             }
         }
-
-
 
 
 
@@ -154,18 +155,42 @@ namespace quiz_tablica
             {
                 time = 6;
                 pkt = pkt + 1;
-                button1.Enabled = true;
-                button1.PerformClick();
-                button1.Enabled = false;
+                losowanie();
             }
             else
             {
                 timer1.Stop();
-                File.AppendAllText(@"wyniki.txt", textBox4.Text + ":  " + pkt + " pkt w czasie: " + time1 + Environment.NewLine);
+                timer2.Stop();
+                if (pkt > 0) { File.AppendAllText(@"wyniki.txt", textBox4.Text + ":  " + pkt + " pkt w czasie: " + time1 + Environment.NewLine); }
                 MessageBox.Show("Zla odpowiedz.  Wynik:  " + pkt + " pkt");
                 zerowanie();
+                button7.Enabled = true;
             }
         }
+
+
+
+        private void button6_Click(object sender, EventArgs e) // Tablica wynikow
+        {
+            MessageBox.Show(File.ReadAllText(@"wyniki.txt"));
+        }
+
+
+
+        private void button1_Click(object sender, EventArgs e)  // Czyszczenie tablicy
+        {
+            if (MessageBox.Show("Czy jestes pewien?", "Potwierdzenie", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                MessageBox.Show("Wyniki zostaly skasowane");
+                File.WriteAllText(@"wyniki.txt", "Tablica wynikow: " + Environment.NewLine);
+            }
+            else
+            {
+                MessageBox.Show("Wyniki nie zostaly skasowane");
+            }
+        }
+
+
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -174,16 +199,15 @@ namespace quiz_tablica
             if (time == 0)
             {
                 timer1.Stop();
-                File.AppendAllText(@"wyniki.txt", textBox4.Text + ":  " + pkt + " pkt w czasie: " + time1 + Environment.NewLine);
+                timer2.Stop();
+                if (pkt > 0) { File.AppendAllText(@"wyniki.txt", textBox4.Text + ":  " + pkt + " pkt w czasie: " + time1 + Environment.NewLine); }
                 MessageBox.Show("Koniec czasu!  Wynik:  " + pkt + " pkt");
                 zerowanie();
+                button7.Enabled = true;
             }
         }
 
-        private void button6_Click(object sender, EventArgs e) // Tablica wynikow
-        {
-            MessageBox.Show("Tablica wynikow." + Environment.NewLine + File.ReadAllText(@"wyniki.txt"));
-        }
+
 
         private void timer2_Tick(object sender, EventArgs e)
         {
@@ -191,16 +215,7 @@ namespace quiz_tablica
             textBox5.Text = time1.ToString();
         }
 
-        private void button7_Click(object sender, EventArgs e) // START
-        {
-            time = 6;
-            time1 = 0;
-            pkt = 0;
-            timer2.Start();
-            button1.Enabled = true;
-            button1.PerformClick();
-            button1.Enabled = false;
-        }
+
     }
 }
 
