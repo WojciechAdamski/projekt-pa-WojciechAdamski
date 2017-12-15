@@ -28,6 +28,8 @@ namespace quiz_tablica
         int x;
         int z = 100;
         int time = 6;
+        int time1 = 0;
+
 
         Random r = new Random();
 
@@ -43,6 +45,7 @@ namespace quiz_tablica
             pkt = 0;
             time = 6;
             textBox2.Text = pkt.ToString();
+            timer2.Stop();
         }
 
 
@@ -67,6 +70,8 @@ namespace quiz_tablica
 
             timer1.Start();
 
+
+
         }
 
 
@@ -80,11 +85,14 @@ namespace quiz_tablica
             {
                 time = 6;
                 pkt = pkt + 1;
+                button1.Enabled = true;
                 button1.PerformClick();
+                button1.Enabled = false;
             }
             else
             {
                 timer1.Stop();
+                File.AppendAllText(@"wyniki.txt", textBox4.Text + ":  " + pkt + " pkt w czasie: " + time1 + Environment.NewLine);
                 MessageBox.Show("Zla odpowiedz.  Wynik:  " + pkt + " pkt");
                 zerowanie();
             }
@@ -100,11 +108,14 @@ namespace quiz_tablica
             {
                 time = 6;
                 pkt = pkt + 1;
+                button1.Enabled = true;
                 button1.PerformClick();
+                button1.Enabled = false;
             }
             else
             {
                 timer1.Stop();
+                File.AppendAllText(@"wyniki.txt", textBox4.Text + ":  " + pkt + " pkt w czasie: " + time1 + Environment.NewLine);
                 MessageBox.Show("Zla odpowiedz.  Wynik:  " + pkt + " pkt");
                 zerowanie();
             }
@@ -120,11 +131,14 @@ namespace quiz_tablica
             {
                 time = 6;
                 pkt = pkt + 1;
+                button1.Enabled = true;
                 button1.PerformClick();
+                button1.Enabled = false;
             }
             else
             {
                 timer1.Stop();
+                File.AppendAllText(@"wyniki.txt", textBox4.Text + ":  " + pkt + " pkt w czasie: " + time1 + Environment.NewLine);
                 MessageBox.Show("Zla odpowiedz.  Wynik:  " + pkt + " pkt");
                 zerowanie();
             }
@@ -140,11 +154,14 @@ namespace quiz_tablica
             {
                 time = 6;
                 pkt = pkt + 1;
+                button1.Enabled = true;
                 button1.PerformClick();
+                button1.Enabled = false;
             }
             else
             {
                 timer1.Stop();
+                File.AppendAllText(@"wyniki.txt", textBox4.Text + ":  " + pkt + " pkt w czasie: " + time1 + Environment.NewLine);
                 MessageBox.Show("Zla odpowiedz.  Wynik:  " + pkt + " pkt");
                 zerowanie();
             }
@@ -157,9 +174,33 @@ namespace quiz_tablica
             if (time == 0)
             {
                 timer1.Stop();
+                File.AppendAllText(@"wyniki.txt", textBox4.Text + ":  " + pkt + " pkt w czasie: " + time1 + Environment.NewLine);
                 MessageBox.Show("Koniec czasu!  Wynik:  " + pkt + " pkt");
                 zerowanie();
             }
         }
+
+        private void button6_Click(object sender, EventArgs e) // Tablica wynikow
+        {
+            MessageBox.Show("Tablica wynikow." + Environment.NewLine + File.ReadAllText(@"wyniki.txt"));
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            time1++;
+            textBox5.Text = time1.ToString();
+        }
+
+        private void button7_Click(object sender, EventArgs e) // START
+        {
+            time = 6;
+            time1 = 0;
+            pkt = 0;
+            timer2.Start();
+            button1.Enabled = true;
+            button1.PerformClick();
+            button1.Enabled = false;
+        }
     }
 }
+

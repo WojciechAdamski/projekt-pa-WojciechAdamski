@@ -29,3 +29,19 @@ D:\projekt-pa-WojciechAdamski\wersja3\quiz tablica\obj\x86\Debug\quiz tablica.cs
 D:\projekt-pa-WojciechAdamski\wersja3\quiz tablica\obj\x86\Debug\quiz_tablica.Form1.resources
 D:\projekt-pa-WojciechAdamski\wersja3\quiz tablica\obj\x86\Debug\quiz_tablica.Properties.Resources.resources
 D:\projekt-pa-WojciechAdamski\wersja3\quiz tablica\obj\x86\Debug\quiz tablica.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\wersja3\quiz tablica\obj\x86\Debug\quiz tablica.exe
+C:\Users\user\Desktop\wersja3\quiz tablica\obj\x86\Debug\quiz tablica.pdb
+C:\Users\user\Desktop\wersja3\quiz tablica\obj\x86\Debug\quiz tablica.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\wersja3\quiz tablica\obj\x86\Debug\quiz_tablica.Form1.resources
+C:\Users\user\Desktop\wersja3\quiz tablica\obj\x86\Debug\quiz_tablica.Properties.Resources.resources
+C:\Users\user\Desktop\wersja3\quiz tablica\obj\x86\Debug\quiz tablica.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\wersja3\quiz tablica\bin\Debug\quiz tablica.exe
+C:\Users\user\Desktop\wersja3\quiz tablica\bin\Debug\quiz tablica.pdb
+C:\Users\user\Desktop\wersja3 - Copy\quiz tablica\obj\x86\Debug\quiz tablica.exe
+C:\Users\user\Desktop\wersja3 - Copy\quiz tablica\obj\x86\Debug\quiz tablica.pdb
+C:\Users\user\Desktop\wersja3 - Copy\quiz tablica\bin\Debug\quiz tablica.exe
+C:\Users\user\Desktop\wersja3 - Copy\quiz tablica\bin\Debug\quiz tablica.pdb
+C:\Users\user\Desktop\wersja3 - Copy\quiz tablica\obj\x86\Debug\quiz tablica.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\wersja3 - Copy\quiz tablica\obj\x86\Debug\quiz_tablica.Form1.resources
+C:\Users\user\Desktop\wersja3 - Copy\quiz tablica\obj\x86\Debug\quiz_tablica.Properties.Resources.resources
+C:\Users\user\Desktop\wersja3 - Copy\quiz tablica\obj\x86\Debug\quiz tablica.csproj.GenerateResource.Cache
