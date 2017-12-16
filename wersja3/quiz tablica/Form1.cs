@@ -26,20 +26,18 @@ namespace quiz_tablica
         public string c;
         public string d;
         int x;
-        int z = 100;
+        int z;
         int time = 6;
         int time1 = 0;
-
-
+        int[] tablica_pytania = new int[17];
         Random r = new Random();
+        int i = 1;
 
 
 
         void zerowanie()
         {
             pkt = 0;
-            x = 100;
-            z = 100;
             textBox1.Text = "Wylosuj pytanie";
             button4.Text = "A";
             button5.Text = "B";
@@ -53,24 +51,48 @@ namespace quiz_tablica
 
         void losowanie()
         {
-            textBox2.Text = pkt.ToString();
+            while (tablica_pytania.Contains(x))
 
-            x = r.Next(1, 16);
-            z = x * 5;
+            {
+                x = r.Next(1, 16);
+            }
 
-            pytania = File.ReadLines(@"pytania.txt").Skip(z).Take(1).First();
-            a = File.ReadLines(@"pytania.txt").Skip(z + 1).Take(1).First();
-            b = File.ReadLines(@"pytania.txt").Skip(z + 2).Take(1).First();
-            c = File.ReadLines(@"pytania.txt").Skip(z + 3).Take(1).First();
-            d = File.ReadLines(@"pytania.txt").Skip(z + 4).Take(1).First();
 
-            textBox1.Text = pytania;
-            button4.Text = a;
-            button5.Text = b;
-            button2.Text = c;
-            button3.Text = d;
+            tablica_pytania[i] = x;
+            i++;
 
-            timer1.Start();
+
+            if (i == 16)
+            {
+                timer1.Stop();
+                timer2.Stop();
+                Array.Clear(tablica_pytania, 0, tablica_pytania.Length);
+                if (pkt > 0) { File.AppendAllText(@"wyniki.txt", textBox4.Text + ":  " + pkt + " pkt w czasie: " + time1 + Environment.NewLine); }
+                MessageBox.Show("Brawo. Udzielono odpowiedz na wszystkie pytania!  Wynik:  " + pkt + " pkt");
+                zerowanie();
+                button();
+                i = 1;
+            }
+
+            else
+            {
+                z = x * 5;
+
+                pytania = File.ReadLines(@"pytania.txt").Skip(z).Take(1).First();
+                a = File.ReadLines(@"pytania.txt").Skip(z + 1).Take(1).First();
+                b = File.ReadLines(@"pytania.txt").Skip(z + 2).Take(1).First();
+                c = File.ReadLines(@"pytania.txt").Skip(z + 3).Take(1).First();
+                d = File.ReadLines(@"pytania.txt").Skip(z + 4).Take(1).First();
+
+                textBox1.Text = pytania;
+                button4.Text = a;
+                button5.Text = b;
+                button2.Text = c;
+                button3.Text = d;
+
+                timer1.Start();
+                textBox2.Text = pkt.ToString();
+            }
         }
 
 

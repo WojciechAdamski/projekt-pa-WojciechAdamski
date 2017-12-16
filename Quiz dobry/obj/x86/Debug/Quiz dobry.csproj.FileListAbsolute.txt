@@ -24,3 +24,5 @@ C:\Users\user\Desktop\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz dobry.csprojResol
 C:\Users\user\Desktop\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz_dobry.Form1.resources
 C:\Users\user\Desktop\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz_dobry.Properties.Resources.resources
 C:\Users\user\Desktop\Quiz dobry\Quiz dobry\obj\x86\Debug\Quiz dobry.csproj.GenerateResource.Cache
+D:\projekt-pa-WojciechAdamski\Quiz dobry\obj\x86\Debug\Quiz dobry.exe
+D:\projekt-pa-WojciechAdamski\Quiz dobry\obj\x86\Debug\Quiz dobry.pdb
