@@ -163,6 +163,7 @@
             this.textBox4.Size = new System.Drawing.Size(243, 31);
             this.textBox4.TabIndex = 10;
             this.textBox4.Text = "Imie";
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button6
             // 
@@ -179,7 +180,7 @@
             // 
             this.textBox5.Enabled = false;
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox5.Location = new System.Drawing.Point(756, 255);
+            this.textBox5.Location = new System.Drawing.Point(718, 219);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(71, 29);
@@ -190,7 +191,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(650, 259);
+            this.label3.Location = new System.Drawing.Point(612, 223);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 25);
             this.label3.TabIndex = 13;
@@ -227,6 +228,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(842, 309);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button7);
