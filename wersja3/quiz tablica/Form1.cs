@@ -20,18 +20,14 @@ namespace quiz_tablica
 
 
         int pkt;
-        public string pytania;
-        public string a;
-        public string b;
-        public string c;
-        public string d;
         int x;
         int z;
         int time = 6;
-        int time1 = 50;
+        int time1 = 51;
         int[] tablica_pytania = new int[25];
-        Random r = new Random();
         int i = 1;
+        Random r = new Random();
+
 
 
 
@@ -77,17 +73,12 @@ namespace quiz_tablica
             {
                 z = x * 5;
 
-                pytania = File.ReadLines(@"pytania.txt").Skip(z).Take(1).First();
-                a = File.ReadLines(@"pytania.txt").Skip(z + 1).Take(1).First();
-                b = File.ReadLines(@"pytania.txt").Skip(z + 2).Take(1).First();
-                c = File.ReadLines(@"pytania.txt").Skip(z + 3).Take(1).First();
-                d = File.ReadLines(@"pytania.txt").Skip(z + 4).Take(1).First();
+                textBox1.Text = File.ReadLines(@"pytania.txt").Skip(z).Take(1).First();
+                button4.Text = File.ReadLines(@"pytania.txt").Skip(z + 1).Take(1).First();
+                button5.Text = File.ReadLines(@"pytania.txt").Skip(z + 2).Take(1).First();
+                button2.Text = File.ReadLines(@"pytania.txt").Skip(z + 3).Take(1).First();
+                button3.Text = File.ReadLines(@"pytania.txt").Skip(z + 4).Take(1).First();
 
-                textBox1.Text = pytania;
-                button4.Text = a;
-                button5.Text = b;
-                button2.Text = c;
-                button3.Text = d;
 
                 timer1.Start();
                 textBox2.Text = pkt.ToString();
@@ -133,7 +124,7 @@ namespace quiz_tablica
         private void button7_Click(object sender, EventArgs e) // START
         {
             time = 6;
-            time1 = 50;
+            time1 = 51;
             pkt = 0;
             timer2.Start();
             losowanie();
